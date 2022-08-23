@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="div">
+        <p>Can you turn the light on?</p>
+        <img src="light.jfif" alt="" id="light">
+        <img src="images.jfif" alt="" id="image">
+        <div id="button">
+            <button id="on" onclick="turnon()">Turn on</button>
+            <button id="off" onclick="turnoff()">Turn off</button>
+        </div>
+    </div>
+
+    <script>
+        const light = document.getElementById("light");
+        const image = document.getElementById("image");
+
+        function turnon() {
+            light.style.display = "block";
+            image.style.display = "none";
+        }
+        function turnoff() {
+            light.style.display = "none";
+            image.style.display = "block";
+        }
+
+
+    </script>
+
+</body>
+
+</html>
